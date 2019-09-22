@@ -1,0 +1,43 @@
+// Combined classes using same styles
+.aboutContainer,
+.portfolioContainer {
+    display: flex;
+}
+
+// About section styling 
+.aboutImg {
+    width: 30%;
+}
+
+.aboutText {
+    width: 70%;
+}
+
+// Skills section styling
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+    .skillsBox {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    figure {
+        padding: 20px 0;
+
+        img {
+            border: 1px solid blue;
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        figcaption {
+            margin-top: 10px;
+        }
+    }
+}
+

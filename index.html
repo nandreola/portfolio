@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab0dbecf18.js" crossorigin="anonymous"></script>
     <title>Natalia Andreola</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -12,14 +14,14 @@
         <div class="wrapper">
             <nav class="mainNav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="navItem"><a href="#home">Home</a></li>
+                    <li class="navItem"><a href="#about">About</a></li>
+                    <li class="navItem"><a href="#skills">Skills</a></li>
+                    <li class="navItem"><a href="#portfolio">Portfolio</a></li>
+                    <li class="navItem"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div>
+            <div class="headerContainer">
                 <h2>Hello! I'm</h2>
                 <h1>Natalia Andreola</h1>
                 <h2>Front-End Developer</h2>
@@ -28,16 +30,16 @@
     </header>
 
     <main>
-        <section class="aboutSection">
+        <section id="about" class="aboutSection">
             <div class="wrapper">
-                <h2>About me</h2>
+                <h2 class="center">About me</h2>
 
                 <div class="aboutContainer">
                     <div class="aboutImg">
-                        <img src="" alt="Natalia's photo">
-                        <p>Natalia Andreola</p>
+                        <img src="assets/nataliaPhoto.jpg" alt="Natalia's photo">
+                        <p class="center">Natalia Andreola</p>
                     </div>
-                    <div class="aboutTex">
+                    <div class="aboutText">
                         <p>Are you looking for a Front-end Developer?</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio explicabo, minus temporibus eaque fugiat totam, labore tempora ipsa mollitia nisi rem quae voluptates dolorum quod illo sunt dolorem modi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio explicabo, minus temporibus eaque fugiat totam,
                         labore tempora ipsa mollitia nisi rem quae voluptates dolorum quod illo sunt dolorem modi! </p>
@@ -48,7 +50,7 @@
             </div> <!-- .wrapper  -->
         </section> <!-- .aboutSection  -->
 
-        <section class="skillsSection">
+        <section id="skills" class="skillsSection center">
             <div class="wrapper">
                 <h2>Skills</h2>
 
@@ -113,19 +115,31 @@
                             <figcaption>VS Code</figcaption>
                         </figure>
                     </li>
+                    <li class="skillsBox">
+                        <figure>
+                            <i class="fas fa-terminal"></i>
+                            <figcaption>Terminal</figcaption>
+                        </figure>
+                    </li>
+                    <li class="skillsBox">
+                        <figure>
+                            <img src="assets/responsiveDesign.svg" alt="Responsive design icon" aria-hidden="true">
+                            <figcaption>Responsive</figcaption>
+                        </figure>
+                    </li>
                 </ul> <!-- .skillsContainer  -->
 
             </div> <!-- .wrapper  -->
         </section> <!-- .skillsSection  -->
 
-        <section class="portfolioSection">
+        <section id="portfolio" class="portfolioSection">
             <div class="wrapper">
-                <h2>Portfolio</h2>
+                <h2 class="center">Portfolio</h2>
 
                 <div class="portfolioContainer">
 
                     <div class="portfolioImg">
-                        <img src="" alt="">
+                        <img src="https://via.placeholder.com/500" alt="">
                     </div><!-- .portfolioImg  -->
 
                     <div class="portfolioContent">
@@ -135,17 +149,38 @@
                         </div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dolorum molestiae cupiditate velit itaque corrupti, eligendi a autem provident vitae praesentium.</p>
                         <div class="portfolioLinks">
-                            <a href="">View live</a>
+                            <a href="">View Live</a>
                             <a href="">View GitHub</a>
                         </div> <!-- .portfolioLinks  -->
                     </div> <!-- .portfolioContent  -->
 
                 </div> <!-- .portfolioContainer  -->
 
+                <div class="portfolioContainer">
+                
+                    <div class="portfolioImg">
+                        <img src="https://via.placeholder.com/500" alt="blablablbala">
+                    </div><!-- .portfolioImg  -->
+                
+                    <div class="portfolioContent">
+                        <h3>Portfolio 2</h3>
+                        <div class="portfolioIcons">
+                            <!-- add icons here  -->
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dolorum molestiae cupiditate velit itaque
+                            corrupti, eligendi a autem provident vitae praesentium.</p>
+                        <div class="portfolioLinks">
+                            <a href="">View Live</a>
+                            <a href="">View GitHub</a>
+                        </div> <!-- .portfolioLinks  -->
+                    </div> <!-- .portfolioContent  -->
+                
+                </div> <!-- .portfolioContainer  -->
+
             </div> <!-- .wrapper  -->
         </section> <!-- .portfolioSection  -->
 
-        <section class="contactSection">
+        <section id="contact" class="contactSection">
             <div class="wrapper">
                 <h2>Contact Me</h2>
                 <p>Thank you for visiting!</p>

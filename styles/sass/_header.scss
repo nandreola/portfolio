@@ -1,0 +1,22 @@
+header {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../../assets/headerBg.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .wrapper {
+        height: 100%;
+        border: 1px solid red;
+    }
+}
+
+// Main nav styling
+.mainNav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 20px 0;
+
+    .navItem {
+        padding: 15px 20px;
+    }
+}
