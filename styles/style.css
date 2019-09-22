@@ -229,7 +229,6 @@ header {
 
 header .wrapper {
   height: 100%;
-  border: 1px solid red;
 }
 
 .mainNav ul {
@@ -270,7 +269,6 @@ header .wrapper {
 }
 
 .skillsContainer .skillsBox {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +285,6 @@ header .wrapper {
 }
 
 .skillsContainer figure img {
-  border: 1px solid blue;
   width: 100px;
   height: 100px;
   -o-object-fit: contain;
@@ -296,5 +293,11 @@ header .wrapper {
 
 .skillsContainer figure figcaption {
   margin-top: 10px;
+}
+
+.portfolioEven .portfolioImg {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 /*# sourceMappingURL=style.css.map */

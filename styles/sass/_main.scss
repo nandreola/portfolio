@@ -19,7 +19,6 @@
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 
     .skillsBox {
-        border: 1px solid red;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -29,7 +28,6 @@
         padding: 20px 0;
 
         img {
-            border: 1px solid blue;
             width: 100px;
             height: 100px;
             object-fit: contain;
@@ -39,5 +37,11 @@
             margin-top: 10px;
         }
     }
+}
+
+// Portfolio section styling
+.portfolioEven .portfolioImg {
+    order: 1;
+    
 }
 
