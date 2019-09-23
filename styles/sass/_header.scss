@@ -1,6 +1,7 @@
 header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../../assets/headerBg.png);
+    background-image: url(../../assets/headerBg.png);
     background-repeat: no-repeat;
+    background-color: $bgColor;
     height: 100vh;
 
     .wrapper {
@@ -17,5 +18,14 @@ header {
 
     .navItem {
         padding: 15px 20px;
+
+        a {
+            color: $primaryColor;
+        }
     }
+}
+
+// Header content
+.headerContainer h2 {
+    text-transform: capitalize;
 }

@@ -1,12 +1,46 @@
 // Combined classes using same styles
+.aboutSection,
+.skillsSection,
+.portfolioSection,
+.contactSection {
+    padding: 50px 0;
+}
+
 .aboutContainer,
 .portfolioContainer {
     display: flex;
 }
 
+.skillsSection,
+.contactSection {
+    background-color: $bgColor;
+}
+
+.aboutImg p,
+footer p {
+    margin: 0;
+    padding: 15px;
+    color: $lightColor;
+}
+
+.aboutImg p,
+footer {
+    background: $primaryColor;
+}
+
+
 // About section styling 
+.aboutContainer {
+    padding: 20px 0;
+}
 .aboutImg {
     width: 30%;
+    margin-right: 50px;
+
+    img {
+        border: 15px solid $tertiaryColor;
+        border-bottom: none;
+    }
 }
 
 .aboutText {
@@ -26,22 +60,38 @@
     
     figure {
         padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         img {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             object-fit: contain;
         }
 
         figcaption {
             margin-top: 10px;
         }
+
+        .terminal {
+            font-size: 6rem;
+        }
     }
 }
 
 // Portfolio section styling
+.portfolioContainer {
+    padding: 30px 0 50px 0;
+}
+
+.portfolioImg {
+    margin-right: 30px;
+}
+
 .portfolioEven .portfolioImg {
     order: 1;
-    
+    margin-left: 30px;
+    margin-right: 0;
 }
 
