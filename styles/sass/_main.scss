@@ -85,8 +85,21 @@ footer {
     padding: 30px 0 50px 0;
 }
 
+p.language {
+    font-size: 1.4rem;
+}
+
 .portfolioImg {
     margin-right: 30px;
+    width: 45%;
+}
+
+.portfolioDescription {
+    width: 55%;
+
+    .portfolioLinks {
+        padding: 20px 0;
+    }
 }
 
 .portfolioEven .portfolioImg {
@@ -95,3 +108,39 @@ footer {
     margin-right: 0;
 }
 
+// Contact section styling
+form {
+    width: 70%;
+    margin: 0 auto;
+
+    fieldset {
+        border: none;
+        background: $lightColor;
+        padding: 20px;
+        box-shadow: 0 0 8px $tertiaryColor;
+
+        .formUserInfo {
+            display: flex;
+            justify-content: space-between;
+
+        .name,
+        .email {
+            width: 48%;
+            
+        }
+    }
+
+        .message {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .name,
+        .email,
+        .message {
+            border: none;
+            border-bottom: 2px solid $tertiaryColor;
+            padding: 20px 0;
+        }
+    }
+}
