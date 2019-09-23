@@ -99,6 +99,10 @@ p.language {
 
     .portfolioLinks {
         padding: 20px 0;
+
+        a:hover {
+            box-shadow: 0 0 5px 0 $darkColor;
+        }
     }
 }
 
@@ -141,6 +145,10 @@ form {
             border: none;
             border-bottom: 2px solid $tertiaryColor;
             padding: 20px 0;
+
+            &:focus {
+                outline: 2px solid $secondaryColor;
+            }
         }
     }
 }

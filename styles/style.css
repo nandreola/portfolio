@@ -295,6 +295,10 @@ header .wrapper {
   text-transform: capitalize;
 }
 
+.social i {
+  color: #7fa1ce;
+}
+
 .aboutSection,
 .skillsSection,
 .portfolioSection,
@@ -413,6 +417,11 @@ p.language {
   padding: 20px 0;
 }
 
+.portfolioDescription .portfolioLinks a:hover {
+  -webkit-box-shadow: 0 0 5px 0 black;
+          box-shadow: 0 0 5px 0 black;
+}
+
 .portfolioEven .portfolioImg {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -459,5 +468,11 @@ form fieldset .message {
   border: none;
   border-bottom: 2px solid #efefef;
   padding: 20px 0;
+}
+
+form fieldset .name:focus,
+form fieldset .email:focus,
+form fieldset .message:focus {
+  outline: 2px solid #7fa1ce;
 }
 /*# sourceMappingURL=style.css.map */
