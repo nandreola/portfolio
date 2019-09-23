@@ -248,7 +248,7 @@ h3 {
 
 h1 {
   color: #C71585;
-  font-size: 5rem;
+  font-size: 7rem;
 }
 
 h2 {
@@ -264,6 +264,7 @@ footer p {
 header {
   background-image: url(../../assets/headerBg.png);
   background-repeat: no-repeat;
+  background-size: 60%;
   background-color: #f9f9f9;
   height: 100vh;
 }
@@ -289,14 +290,15 @@ header .wrapper {
 
 .mainNav ul .navItem a {
   color: #C71585;
+  position: relative;
+}
+
+.mainNav ul .navItem a:hover, .mainNav ul .navItem a:focus {
+  border-bottom: 2px solid #7fa1ce;
 }
 
 .headerContainer h2 {
   text-transform: capitalize;
-}
-
-.social i {
-  color: #7fa1ce;
 }
 
 .aboutSection,
@@ -340,8 +342,7 @@ footer {
 }
 
 .aboutImg img {
-  border: 15px solid #efefef;
-  border-bottom: none;
+  border: 15px solid #C71585;
 }
 
 .aboutText {
@@ -417,7 +418,8 @@ p.language {
   padding: 20px 0;
 }
 
-.portfolioDescription .portfolioLinks a:hover {
+.portfolioDescription .portfolioLinks a:hover,
+.portfolioDescription .portfolioLinks a:focus {
   -webkit-box-shadow: 0 0 5px 0 black;
           box-shadow: 0 0 5px 0 black;
 }
@@ -474,5 +476,28 @@ form fieldset .name:focus,
 form fieldset .email:focus,
 form fieldset .message:focus {
   outline: 2px solid #7fa1ce;
+}
+
+.social h3 {
+  padding-top: 40px;
+}
+
+.socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socialList i {
+  color: #7fa1ce;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.socialList i:hover, .socialList i:focus {
+  color: #C71585;
 }
 /*# sourceMappingURL=style.css.map */

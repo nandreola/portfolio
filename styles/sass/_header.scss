@@ -1,6 +1,7 @@
 header {
     background-image: url(../../assets/headerBg.png);
     background-repeat: no-repeat;
+    background-size: 60%;
     background-color: $bgColor;
     height: 100vh;
 
@@ -21,6 +22,12 @@ header {
 
         a {
             color: $primaryColor;
+            position: relative;
+
+            &:hover,
+            &:focus {
+                border-bottom: 2px solid $secondaryColor;
+            }
         }
     }
 }
@@ -28,8 +35,4 @@ header {
 // Header content
 .headerContainer h2 {
     text-transform: capitalize;
-}
-
-.social i {
-    color: $secondaryColor;
 }
