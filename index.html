@@ -14,13 +14,27 @@
         <div class="wrapper">
             <nav class="mainNav">
                 <ul>
-                    <li class="navItem"><a href="#">Home</a></li>
-                    <li class="navItem"><a href="#about">About</a></li>
-                    <li class="navItem"><a href="#skills">Skills</a></li>
-                    <li class="navItem"><a href="#portfolio">Portfolio</a></li>
-                    <li class="navItem"><a href="#contact">Contact</a></li>
+                    <li class="navItem mobileHidden"><a href="#">Home</a></li>
+                    <li class="navItem mobileHidden"><a href="#about">About</a></li>
+                    <li class="navItem mobileHidden"><a href="#skills">Skills</a></li>
+                    <li class="navItem mobileHidden"><a href="#portfolio">Portfolio</a></li>
+                    <li class="navItem mobileHidden"><a href="#contact">Contact</a></li>
+                    <li class="hamburger"><button><i class="fas fa-bars"></i></button></li>
                 </ul>
             </nav>
+
+            <div class="navMobile center">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
             <div class="headerContainer">
                 <h2>Hello! I'm</h2>
                 <h1>Natalia Andreola</h1>
@@ -264,6 +278,7 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
     
 </body>
