@@ -196,7 +196,8 @@ a {
 
 .mainNav ul,
 .skillsContainer,
-.social ul {
+.social ul,
+.navMobile ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
@@ -328,6 +329,32 @@ header .wrapper {
 .headerContainer h2 {
   text-transform: capitalize;
   padding: 0;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2.5rem;
+}
+
+.hamburger button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #C71585;
+}
+
+.navMobile {
+  display: none;
+  background-color: #efefef;
+}
+
+.navMobile li {
+  padding: 10px;
+  border-bottom: 2px solid #7fa1ce;
+}
+
+.navMobile li a {
+  color: black;
 }
 
 .aboutSection,
@@ -533,6 +560,14 @@ form fieldset .message:focus {
   body,
   a {
     font-size: 1.8rem;
+  }
+  .mainNav .mobileHidden {
+    display: none;
+  }
+  .mainNav .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .aboutContainer,
   .portfolioContainer {

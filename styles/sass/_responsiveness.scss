@@ -5,6 +5,16 @@
         font-size: 1.8rem;
     }
 
+    .mainNav {
+        .mobileHidden {
+            display: none;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+    }
+
     // About section
     .aboutContainer,
     .portfolioContainer {
