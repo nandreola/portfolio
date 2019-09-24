@@ -5,6 +5,7 @@
         font-size: 1.8rem;
     }
 
+    // nav section
     .mainNav {
         .mobileHidden {
             display: none;
@@ -22,7 +23,19 @@
         align-items: center;
     }
 
+    .aboutImg {
+        margin-right: 0;
+        width: 50%;
+    }
+
+    // .aboutText {
+    //     width: 90%;
+    // }
+
     // portfolio section
+    .portfolioContainer {
+        padding-bottom: 30px;
+    }
     
     .portfolioImg {
         margin-right: 0;
@@ -30,12 +43,14 @@
     }
 
     .portfolioImg,
-    .portfolioDescription {
-        width: 80%;
+    .portfolioDescription,
+    .aboutText {
+        width: 90%;
     }
 
     .portfolioEven .portfolioImg {
         order: 0;
+        margin-left: 0;
     }
 
     // contact section
@@ -43,7 +58,29 @@
         width: 100%;
 
         fieldset .formUserInfo {
-            width: 100%
+            flex-direction: column;
+
+            .name,
+            .email {
+                width: 100%;
+            }
+        }     
+    }
+}
+
+@media (max-width: 500px) {
+    // Portfolio section
+    .portfolioLinks {
+        text-align: center;
+    }
+
+    // Skills section
+    .skillsContainer {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+        figure img {
+            width: 70px;
+            height: 70px;
         }
     }
 }
