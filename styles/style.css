@@ -229,7 +229,8 @@ a {
   background: #7fa1ce;
 }
 
-span {
+span,
+.highlightLink {
   color: #C71585;
 }
 
@@ -260,7 +261,6 @@ h1 {
 h2 {
   padding: 20px 0;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 footer p {
@@ -356,6 +356,10 @@ header {
 
 .navMobile li a {
   color: black;
+}
+
+.navMobile li a:hover, .navMobile li a:focus {
+  color: #C71585;
 }
 
 .aboutSection,
