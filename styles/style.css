@@ -347,6 +347,9 @@ header {
 
 .navMobile {
   display: none;
+  position: absolute;
+  width: 100%;
+  opacity: 0.9;
 }
 
 .navMobile li {
@@ -356,6 +359,7 @@ header {
 
 .navMobile li a {
   color: black;
+  font-weight: 700;
 }
 
 .navMobile li a:hover, .navMobile li a:focus {
