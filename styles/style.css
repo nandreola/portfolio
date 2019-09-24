@@ -275,8 +275,9 @@ header {
   height: 100vh;
 }
 
-header .wrapper {
-  height: 100%;
+.mainNav,
+.navMobile {
+  background-color: #efefef;
 }
 
 .mainNav ul {
@@ -286,7 +287,7 @@ header .wrapper {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .mainNav ul .navItem {
@@ -313,7 +314,7 @@ header .wrapper {
 }
 
 .headerContainer {
-  height: calc(100% - 80px);
+  height: calc(100% - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,11 +342,11 @@ header .wrapper {
   background-color: transparent;
   border: none;
   color: #C71585;
+  padding: 15px;
 }
 
 .navMobile {
   display: none;
-  background-color: #efefef;
 }
 
 .navMobile li {
