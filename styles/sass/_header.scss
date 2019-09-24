@@ -15,7 +15,6 @@ header {
     display: flex;
     justify-content: flex-end;
     margin: 0;
-    padding: 20px 0;
 
     .navItem {
         padding: 15px 20px;
@@ -42,6 +41,14 @@ header {
 }
 
 // Header content
-.headerContainer h2 {
-    text-transform: capitalize;
+.headerContainer {
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        text-transform: capitalize;
+        padding: 0;
+    }
 }

@@ -286,7 +286,6 @@ header .wrapper {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0;
-  padding: 20px 0;
 }
 
 .mainNav ul .navItem {
@@ -312,8 +311,23 @@ header .wrapper {
   color: #7fa1ce;
 }
 
+.headerContainer {
+  height: calc(100% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .headerContainer h2 {
   text-transform: capitalize;
+  padding: 0;
 }
 
 .aboutSection,
@@ -513,5 +527,41 @@ form fieldset .message:focus {
 
 .socialList i:hover, .socialList i:focus {
   color: #C71585;
+}
+
+@media (max-width: 700px) {
+  body,
+  a {
+    font-size: 1.8rem;
+  }
+  .aboutContainer,
+  .portfolioContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolioImg {
+    margin-right: 0;
+    padding: 40px 0;
+  }
+  .portfolioImg,
+  .portfolioDescription {
+    width: 80%;
+  }
+  .portfolioEven .portfolioImg {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  form {
+    width: 100%;
+  }
+  form fieldset .formUserInfo {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
