@@ -4,17 +4,18 @@ header {
     background-size: 60%;
     background-color: $bgColor;
     height: 100vh;
-
-    .wrapper {
-        height: 100%;
-    }
 }
 
 // Main nav styling
+.mainNav,
+.navMobile {
+    background-color: $tertiaryColor;
+}
+
 .mainNav ul {
     display: flex;
     justify-content: flex-end;
-    margin: 0;
+    margin: 0 auto;
 
     .navItem {
         padding: 15px 20px;
@@ -42,7 +43,7 @@ header {
 
 // Header content
 .headerContainer {
-    height: calc(100% - 80px);
+    height: calc(100% - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,12 +63,12 @@ header {
         background-color: transparent;
         border: none;
         color: $primaryColor;
+        padding: 15px;
     }
 }
 
 .navMobile {
     display: none;
-    background-color: $tertiaryColor;;
 
     li {
         padding: 10px;
