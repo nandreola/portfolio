@@ -24,9 +24,18 @@ header {
             color: $primaryColor;
             position: relative;
 
-            &:hover,
+            &:hover::after {
+                content: '';
+                width: 90%;
+                height: 40%;
+                position: absolute;
+                left: 5%;
+                bottom: -10px;
+                background-color: $secondaryColor;
+            }
+
             &:focus {
-                border-bottom: 2px solid $secondaryColor;
+                color: $secondaryColor;
             }
         }
     }

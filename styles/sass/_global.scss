@@ -32,6 +32,11 @@ a {
 .btn {
     padding: 10px 15px;
     color: $lightColor;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 5px 0 $darkColor;
+        }
 }
 
 .btnPrimary {

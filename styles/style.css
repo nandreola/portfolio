@@ -215,6 +215,11 @@ a {
   color: white;
 }
 
+.btn:hover, .btn:focus {
+  -webkit-box-shadow: 0 0 5px 0 black;
+          box-shadow: 0 0 5px 0 black;
+}
+
 .btnPrimary {
   background: #C71585;
 }
@@ -293,8 +298,18 @@ header .wrapper {
   position: relative;
 }
 
-.mainNav ul .navItem a:hover, .mainNav ul .navItem a:focus {
-  border-bottom: 2px solid #7fa1ce;
+.mainNav ul .navItem a:hover::after {
+  content: '';
+  width: 90%;
+  height: 40%;
+  position: absolute;
+  left: 5%;
+  bottom: -10px;
+  background-color: #7fa1ce;
+}
+
+.mainNav ul .navItem a:focus {
+  color: #7fa1ce;
 }
 
 .headerContainer h2 {
@@ -338,11 +353,12 @@ footer {
 
 .aboutImg {
   width: 30%;
-  margin-right: 50px;
+  margin: 20px 50px 20px 0;
 }
 
 .aboutImg img {
-  border: 15px solid #C71585;
+  border-top: 15px solid #C71585;
+  border-bottom: 15px solid #C71585;
 }
 
 .aboutText {
@@ -418,10 +434,8 @@ p.language {
   padding: 20px 0;
 }
 
-.portfolioDescription .portfolioLinks a:hover,
-.portfolioDescription .portfolioLinks a:focus {
-  -webkit-box-shadow: 0 0 5px 0 black;
-          box-shadow: 0 0 5px 0 black;
+.portfolioDescription .portfolioLinks a {
+  margin-right: 10px;
 }
 
 .portfolioEven .portfolioImg {

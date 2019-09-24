@@ -35,10 +35,11 @@ footer {
 }
 .aboutImg {
     width: 30%;
-    margin-right: 50px;
+    margin: 20px 50px 20px 0;
 
     img {
-        border: 15px solid $primaryColor;
+        border-top: 15px solid $primaryColor;
+        border-bottom: 15px solid $primaryColor;
     }
 }
 
@@ -99,9 +100,8 @@ p.language {
     .portfolioLinks {
         padding: 20px 0;
 
-        a:hover,
-        a:focus {
-            box-shadow: 0 0 5px 0 $darkColor;
+        a {
+            margin-right: 10px;
         }
     }
 }
