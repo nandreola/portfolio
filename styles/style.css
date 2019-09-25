@@ -553,6 +553,7 @@ form fieldset .formUserInfo .email {
 form fieldset .message {
   width: 100%;
   margin: 10px 0;
+  resize: none;
 }
 
 form fieldset .name,
