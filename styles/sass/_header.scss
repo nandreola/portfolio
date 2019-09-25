@@ -47,10 +47,33 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 
     h2 {
         text-transform: capitalize;
         padding: 0;
+    }
+
+    .resume {
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+    }
+
+    .arrowDown {
+        position: absolute;
+        bottom: 4%;
+        right: 50%;
+
+        i {
+            font-size: 3rem;
+            color: $primaryColor;
+
+            &:hover,
+            &:focus {
+                color: $secondaryColor;
+            }
+        }
     }
 }
 
