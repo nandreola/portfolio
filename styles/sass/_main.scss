@@ -174,3 +174,37 @@ form {
     }
 }
 
+// Tech test 
+.audioContainer {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    border: none;
+    background: transparent;
+    padding: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+
+    audio {
+        clip-path: circle(18px at 9% 50%);
+    }
+
+    .listenTxt {
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        font-size: 1.4rem;
+        background: $bgColor;
+        padding: 5px;
+    }
+
+    @media (max-width: 768px) {
+        audio {
+            width: 250px;
+        }
+    }
+}
+
+

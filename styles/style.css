@@ -234,6 +234,10 @@ span,
   color: #C71585;
 }
 
+.hidden {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -591,6 +595,40 @@ form fieldset .message:focus {
 
 .socialList i:hover, .socialList i:focus {
   color: #C71585;
+}
+
+.audioContainer {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  z-index: 10;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.audioContainer audio {
+  -webkit-clip-path: circle(18px at 9% 50%);
+          clip-path: circle(18px at 9% 50%);
+}
+
+.audioContainer .listenTxt {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-size: 1.4rem;
+  background: #f9f9f9;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .audioContainer audio {
+    width: 250px;
+  }
 }
 
 @media (max-width: 700px) {
