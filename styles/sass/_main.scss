@@ -33,6 +33,7 @@ footer {
 .aboutContainer {
     padding: 20px 0;
 }
+
 .aboutImg {
     width: 30%;
     margin: 20px 50px 20px 0;
@@ -45,6 +46,18 @@ footer {
 
 .aboutText {
     width: 70%;
+}
+
+.arrowUp {
+    position: fixed;
+    right: 2%;
+    bottom: 8%;
+    display: none;
+
+    i {
+        font-size: 3rem;
+        color: $primaryColor;
+    }
 }
 
 // Skills section styling

@@ -442,6 +442,18 @@ footer {
   width: 70%;
 }
 
+.arrowUp {
+  position: fixed;
+  right: 2%;
+  bottom: 8%;
+  display: none;
+}
+
+.arrowUp i {
+  font-size: 3rem;
+  color: #C71585;
+}
+
 .skillsContainer {
   display: -ms-grid;
   display: grid;
